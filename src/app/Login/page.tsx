@@ -1,5 +1,5 @@
 import React from 'react';
-import { CameraOutlined, UserAddOutlined } from '@ant-design/icons';
+import { CameraOutlined, LockOutlined, UserAddOutlined, UserOutlined } from '@ant-design/icons';
 import styles from './page.module.css';
 import Image from './login.png'; // Ensure the path to your image is correct
 
@@ -14,10 +14,9 @@ const LoginPage = () => {
           </ul>
         </nav>
         <div className={styles.logo}>
-          Who's Using My Photo
+          Who is Using My Photo
         </div>
         <div className={styles.auth}>
-          <button className={styles.loginBtn}><CameraOutlined /> Login</button>
           <button className={styles.signUpBtn}><UserAddOutlined /> Sign Up</button>
         </div>
       </header>
@@ -26,13 +25,25 @@ const LoginPage = () => {
           <h1 className={styles.title}>HELLO!</h1>
           <p className={styles.subtitle}>sign in your account</p>
           <form className={styles.loginForm}>
-            <div className={styles.inputGroup}>
-              <input type="text" placeholder="Username" className={styles.input} />
+          <div className={styles["input-section"]}>
+            <div className={styles.icon}><UserOutlined style={{fontSize: '3vh', marginLeft:'1.5vh'}}/></div>
+            <div className={styles["middle-line"]}>
+              <div className={styles["small-line"]}></div>
+              <div className={styles.line}></div>
+              <div className={styles["small-line"]}></div>
             </div>
-            <div className={styles.inputGroup}>
-              <input type="password" placeholder="Password" className={styles.input} />
+            <input type="username" className={styles.input} placeholder='Нэвтрэх нэрээ оруулна уу!'/>
+          </div>
+          <div className={styles["input-section"]}>
+            <div className={styles.icon}><LockOutlined style={{fontSize: '3vh', marginLeft:'1.5vh'}}/></div>
+            <div className={styles["middle-line"]}>
+              <div className={styles["small-line"]}></div>
+              <div className={styles.line}></div>
+              <div className={styles["small-line"]}></div>
             </div>
-            <button type="submit" className={styles.loginButton}>LOGIN</button>
+            <input type="password" className={styles.input} placeholder='Нууц үгээ оруулна уу!'/>
+          </div>
+          <button className={styles["signup-btn"]}>SIGN UP</button>
           </form>
         </div>
         <div className={styles.imageSection}>
