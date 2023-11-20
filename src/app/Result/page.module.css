@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+One&display=swap");
+.container {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 90px;
+  width: 100vw;
+  background-color: #a47cd7;
+  padding: 0%;
+  margin: 0%;
+  box-shadow: 2px 2px 5px 0px #343138;
+  display: flex;
+  justify-content: space-around;
+}
+.con01 {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn01 {
+  height: 90px;
+  font-size: 25px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #a47cd7;
+  border: solid 1px #a47cd7;
+}
+
+.btn02 {
+  height: 90px;
+  font-size: 25px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #a47cd7;
+  border: solid 1px #a47cd7;
+}
+
+.con02 {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-section {
+  height: 90px;
+  width: 300px;
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+  font-family: "Sansita One", cursive;
+  margin-top: 0.5%;
+}
+
+.con03 {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.user {
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  background-color: #a47cd7;
+  border: solid 1px #a47cd7;
+}
+div.title01 {
+  font-weight: 400;
+}
+ 
+
+.resultsHeading {
+  
+  font-size: 1rem; /* Replace with actual font size */
+  color: #333; /* Replace with actual color */
+  font-weight: bold; /* If the font is bold */
+  text-align: center;
+  
+  margin-top: 30px;
+  display: flex ;
+  justify-content: center ;
+  font-size: 20px;
+
+}
+
+.mainContent {
+  
+  width: 1400px;
+  height: 400px;
+  background-color:none; 
+  border-radius: 30px; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 3%; 
+  margin-bottom: 6%;
+  
+}
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a47cd7; /* Replace with the actual color or gradient used */
+  border-radius: 20px; /* Adjust as needed */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+  margin: 20px; /* Adjust as needed */
+  width: fit-content;
+}
+
+.profileImage {
+  width: 260px; /* Replace with actual width of your image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 30px; /* Adjust as needed to match the border radius in your design */
+  margin-bottom: 25px; /* Space between image and text */
+}
+
+.profileText {
+  font-size: 1rem; /* Replace with actual font size */
+  color: #ffffff; /* Replace with actual color */
+  font-weight: bold; /* If the font is bold */
+  text-align: center;
+}
+
+
+
+.resultsSection {
+  /* ... other styles ... */
+  height: 360px; /* Set the height you want for the profile section */
+  overflow-y: auto; /* Allows for vertical scrolling */
+  flex-direction: row;
+}
+
+/* Style the scrollbar for WebKit browsers */
+.resultsSection::-webkit-scrollbar {
+  width: 10px;
+}
+
+.resultsSection::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.resultsSection::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+  
+}
+
+
+.resultsSection {
+  scrollbar-width: thin;
+  scrollbar-color: #a29bfe #f0f0f0;
+  padding: 40px 100px ;
+}
+.userItem {
+  background-color: #a47cd7; /* Example purple background color */
+  border-radius: 20px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between items */
+  width: 90%; /* Full width */
+  display: flex;
+  align-items: center;
+  padding: 15px 70px ; /* Padding inside each item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.userImage {
+  width: 60px; /* Adjust as necessary */
+  height: 60px;
+  border-radius: 35%; /* Circular images */
+  object-fit: cover;
+  
+  
+}
+
+.userName {
+  font-size: 1rem; /* Adjust as necessary */
+  color: #ffffff; /* Text color */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+  
+}
+  

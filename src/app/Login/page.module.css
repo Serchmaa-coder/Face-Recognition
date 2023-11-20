@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+One&display=swap");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a47cd7; /* Your header background color */
+  padding: 0 20px;
+  height: 70px;
+  width: 100%;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.logo {
+  font-family: "Sansita One", cursive;
+  color: #ffffff;
+}
+.loginBtn,
+.signUpBtn {
+  background-color: #54357b; /* Button background color */
+  border: none;
+  color: #ffffff;
+  padding: 10px 25px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 30px; /* Optional: if you want rounded corners */
+}
+
+.signUpBtn {
+  background-color: #d7b8ff; /* Different background color for Sign Up */
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .auth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginBtn,
+  .signUpBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.container {
+  font-family: "Nunito Sans", sans-serif;
+  color: #343138;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+  /* Adjust width and height as needed, or use media queries */
+}
+
+.title {
+  font-family: "Sansita One", cursive;
+  color: #54357b; /* Adjust to the color in your design */
+  margin-bottom: 5px;
+  text-shadow: #120424;
+}
+
+.footer {
+  font-size: 18px;
+  color: #666;
+  position: fixed;
+  bottom: 15px;
+  text-align: center;
+  align-self: center;
+  width: 100vw;
+}
+
+/* page.module.css */
+.container {
+  font-family: "Nunito Sans", sans-serif;
+  color: #343138;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.title {
+  font-family: "Sansita One", cursive;
+  color: #54357b;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Nunito Sans", sans-serif;
+  color: #343138; /* Adjust to the color in your design */
+  margin-bottom: 20px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%; /* Adjust width as needed */
+  justify-content: space-evenly;
+}
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7b8ff; /* Adjust to the border color in your design */
+  border-radius: 4px;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f3f3f3; /* Adjust to the input background color in your design */
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a47cd7;
+}
+
+.loginButton {
+  background-color: #343138; /* Adjust to the button color in your design */
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #54357b;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 1.2em;
+  }
+}
+
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Adjust the gap between the image and the login form as needed */
+  padding: 40px;
+  background-color: #ffffff; /* Assuming a white background */
+}
+
+.loginSection {
+  flex-basis: 50%; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Sansita One", cursive;
+  color: #54357b; /* Use the color provided in your design */
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-family: "Nunito Sans", sans-serif;
+  color: #343138; /* Use the color provided in your design */
+  margin-bottom: 20px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust width as needed */
+}
+
+.imageSection {
+  flex-basis: 50%; /* Adjust the width as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.loginImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles, if necessary */
+@media (max-width: 768px) {
+  .loginPage {
+    flex-direction: column;
+  }
+}
+.input-section {
+  height: 53px;
+  width: 330px;
+  display: flex;
+  flex-direction: row;
+  background-color: #d7b8ff;
+  align-self: center;
+  margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  height: 53px;
+  width: 55px;
+}
+.input {
+  height: 30px;
+  width: 275px;
+  background-color: #d7b8ff;
+  border: solid 1px #d7b8ff;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-indent: 10px;
+  color: #a18abf;
+}
+
+.middle-line {
+  height: 53px;
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.small-line {
+  height: 10px;
+  width: 100%;
+}
+.line {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+.signup-btn {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  align-self: center;
+  color: white;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
